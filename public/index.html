@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Chat app</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <h1 class="title">iChat <i class='far fa-comment-dots' style='font-size:36px'></i> </h1>
+    <div class="main">
+        <div class="name">
+           <span><i class="far fa-user"></i></span>
+           <input type="text" id="name" class="name" value="anonymous" maxlength="20">
+        </div>
+        <ul class="message-container" id="message-container">
+            <li class="message-left">
+                <p class="message">
+                    welcome to chatbox
+                    <span>anonymous • 13 april 5.30</span>
+                </p>
+            </li>
+
+            <li class="message-right">
+                <p class="message">
+                    welcome to chatbox
+                    <span>anonymous • 13 april 5.30</span>
+                </p>
+            </li>
+
+            <li class="message-feedback">
+                <p class="feedback" id="feedback">✍ Killer is typing a message</p>
+            </li>
+        </ul>
+
+        <form class="message-form" id="message-form">
+            <input type="text" name="message" id="message-input" class="message-input">
+            <div class="v-divider"></div>
+            <button type="submit" class="send-button">
+                send<span><i class="fas fa-paper-plane"></i></span>
+            </button>
+        </form>
+    </div>
+    <h3 class="clients-total" id="client-total">Total client:0</h3>
+    
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.28.0/moment.min.js" integrity="sha512-Q1f3TS3vSt1jQ8AwP2OuenztnLU6LwxgyyYOG1jgMW/cbEMHps/3wjvnl1P3WTrF3chJUWEoxDUEjMxDV8pujg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js">
+      
+    </script>
+</body>
+</html>
